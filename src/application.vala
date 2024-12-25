@@ -31,9 +31,9 @@ public class Pomerode.Application : Adw.Application {
             copyright = "© 2024 @sammarxz",
             license_type = Gtk.License.GPL_3_0,
             website = "https://github.com/sammarxz/pomerode",
-            website_label = "Project Website",
-            comments = "A simple focus timer app",
-            translator_credits = "translator-credits",
+            website_label = _("Project Website"),
+            comments = _("A simple focus timer app"),
+            translator_credits = _("translator-credits"),
             transient_for = this.active_window
         };
         about.present ();

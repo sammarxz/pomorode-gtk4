@@ -81,12 +81,12 @@ public class Pomerode.Window : Adw.ApplicationWindow {
         is_running = !is_running;
         if (is_running) {
             start_timer ();
-            start_button.label = "Pause";
+            start_button.label = _("Pause");
             start_button.remove_css_class("play-button");
             start_button.add_css_class("pause-button");
         } else {
             stop_timer ();
-            start_button.label = "Start";
+            start_button.label = _("Start");
             start_button.remove_css_class("pause-button");
             start_button.add_css_class("play-button");
         }
@@ -126,7 +126,7 @@ public class Pomerode.Window : Adw.ApplicationWindow {
     
         if (autostart_intervals) {
             start_timer ();
-            start_button.label = "Pause";
+            start_button.label = _("Pause");
             start_button.remove_css_class ("play-button");
             start_button.add_css_class ("pause-button");
             is_running = true;
@@ -136,13 +136,13 @@ public class Pomerode.Window : Adw.ApplicationWindow {
     private string get_completion_message () {
         switch (current_session) {
         case SessionType.FOCUS:
-            return "Focus session complete. Time for a break!";
+            return _("Focus session complete. Time for a break!");
         case SessionType.SHORT_BREAK:
-            return "Break complete. Back to focus!";
+            return _("Break complete. Back to focus!");
         case SessionType.LONG_BREAK:
-            return "Long break complete. Ready for a new cycle?";
+            return _("Long break complete. Ready for a new cycle?");
         default:
-            return "Session complete!";
+            return _("Session complete!");
         }
     }
 
@@ -176,7 +176,7 @@ public class Pomerode.Window : Adw.ApplicationWindow {
 
         update_label ();
         update_session_label ();
-        start_button.label = "Start";
+        start_button.label = _("Start");
         start_button.remove_css_class("pause-button");
         start_button.add_css_class("play-button");
         is_running = false;
@@ -191,13 +191,13 @@ public class Pomerode.Window : Adw.ApplicationWindow {
     private void update_session_label () {
         switch (current_session) {
         case SessionType.FOCUS:
-            session_label.label = "Focus Time";
+            session_label.label = _("Focus Time");
             break;
         case SessionType.SHORT_BREAK:
-            session_label.label = "Short Break";
+            session_label.label = _("Short Break");
             break;
         case SessionType.LONG_BREAK:
-            session_label.label = "Long Break";
+            session_label.label = _("Long Break");
             break;
         }
     }

@@ -4,6 +4,7 @@ project('com.github.sammarxz.pomerode', ['c', 'vala'],
 
 app_id = 'com.github.sammarxz.pomerode'
 
+i18n = import('i18n')
 gnome = import('gnome')
 
 add_project_arguments(
@@ -12,6 +13,7 @@ add_project_arguments(
 )
 
 subdir('data')
+subdir('po')
 subdir('src')
 
 # Compile schemas

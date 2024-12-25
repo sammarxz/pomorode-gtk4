@@ -3,20 +3,20 @@
   <requires lib="gtk" version="4.0"/>
   <requires lib="libadwaita" version="1.0"/>
   <template class="PomerodePreferencesWindow" parent="AdwPreferencesWindow">
-    <property name="title">Preferences</property>
+    <property name="title" translatable="yes">Preferences</property>
     <property name="default-width">400</property>
     <property name="modal">true</property>
     <child>
       <object class="AdwPreferencesPage">
         <child>
           <object class="AdwPreferencesGroup">
-            <property name="title">Intervals</property>
+            <property name="title" translatable="yes">Intervals</property>
             
             <!-- Work Duration -->
             <child>
               <object class="AdwActionRow">
-                <property name="title">Work Duration</property>
-                <property name="subtitle">Duration in minutes</property>
+                <property name="title" translatable="yes">Work Duration</property>
+                <property name="subtitle" translatable="yes">Duration in minutes</property>
                 <child>
                   <object class="GtkBox">
                     <property name="valign">center</property>
@@ -58,8 +58,8 @@
             <!-- Break Duration -->
             <child>
               <object class="AdwActionRow">
-                <property name="title">Break Duration</property>
-                <property name="subtitle">Duration in minutes</property>
+                <property name="title" translatable="yes">Break Duration</property>
+                <property name="subtitle" translatable="yes">Duration in minutes</property>
                 <child>
                   <object class="GtkBox">
                     <property name="valign">center</property>
@@ -101,8 +101,8 @@
             <!-- Long Break Duration -->
             <child>
               <object class="AdwActionRow">
-                <property name="title">Long Break Duration</property>
-                <property name="subtitle">Duration in minutes</property>
+                <property name="title" translatable="yes">Long Break Duration</property>
+                <property name="subtitle" translatable="yes">Duration in minutes</property>
                 <child>
                   <object class="GtkBox">
                     <property name="valign">center</property>
@@ -144,8 +144,8 @@
             <!-- Intervals until Long Break -->
             <child>
               <object class="AdwActionRow">
-                <property name="title">Intervals until Long Break</property>
-                <property name="subtitle">Number of work intervals before a long break</property>
+                <property name="title" translatable="yes">Intervals until Long Break</property>
+                <property name="subtitle" translatable="yes">Number of work intervals before a long break</property>
                 <child>
                   <object class="GtkBox">
                     <property name="valign">center</property>
@@ -187,8 +187,8 @@
             <!-- Autostart Intervals -->
             <child>
               <object class="AdwActionRow">
-                <property name="title">Autostart Intervals</property>
-                <property name="subtitle">Automatically start next interval when current one ends</property>
+                <property name="title" translatable="yes">Autostart Intervals</property>
+                <property name="subtitle" translatable="yes">Automatically start next interval when current one ends</property>
                 <child>
                   <object class="GtkSwitch" id="autostart_intervals_switch">
                     <property name="valign">center</property>

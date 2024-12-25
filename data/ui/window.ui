@@ -38,7 +38,7 @@
                 <property name="vexpand">true</property>
                 <child>
                   <object class="GtkLabel" id="session_label">
-                    <property name="label">Focus Time</property>
+                    <property name="label" translatable="yes">Focus Time</property>
                     <style>
                       <class name="session-label"/>
                     </style>
@@ -70,7 +70,7 @@
                 <property name="margin-bottom">12</property>
                 <child>
                   <object class="GtkButton" id="start_button">
-                    <property name="label">Start</property>
+                    <property name="label" translatable="yes">Start</property>
                     <property name="hexpand">true</property>
                     <style>
                       <class name="play-button"/>
@@ -89,11 +89,11 @@
   <menu id="primary_menu">
     <section>
       <item>
-        <attribute name="label">Preferences</attribute>
+        <attribute name="label" translatable="yes">Preferences</attribute>
         <attribute name="action">app.preferences</attribute>
       </item>
       <item>
-        <attribute name="label">About Pomerode</attribute>
+        <attribute name="label" translatable="yes">About Pomerode</attribute>
         <attribute name="action">app.about</attribute>
       </item>
     </section>
